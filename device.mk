@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
-	android.hardware.fastboot@1.1-impl-mock.recovery \
+    android.hardware.fastboot@1.1-impl-mock.recovery \
     fastbootd
 
 # Filesystem
@@ -282,6 +282,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+    hardware/qcom/bootctrl
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sm8150/display
