@@ -7,6 +7,8 @@
 # Inherit from sm8150-common
 include device/xiaomi/sm8150-common/BoardConfigCommon.mk
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 DEVICE_PATH := device/xiaomi/nabu
 
 # A/B
