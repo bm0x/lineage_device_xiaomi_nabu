@@ -35,13 +35,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Boot control HAL
+# Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-impl-wrapper.recovery \
-    android.hardware.boot@1.2-impl-wrapper \
     android.hardware.boot@1.2-impl.recovery \
+    bootctrl.msmnile.recovery
+
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.2-impl:64 \
+    android.hardware.boot@1.2-service \
+    bootctrl.msmnile
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
+PRODUCT_PACKAGES += \
     libz \
     libcutils
 
