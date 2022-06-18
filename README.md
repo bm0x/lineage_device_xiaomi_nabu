@@ -29,7 +29,7 @@ Release Date | 2021, August
 only if you're a developer, compile this with:
 
 - git clone https://github.com/bm0x/android_vendor_xiaomi_sm8150-common -b 11 vendor/xiaomi/sm8150-common
-- git clone https://github.com/bm0x/android_device_xiaomi_sm8150-common -b lineage-18.1 device/xiaomi/sm8150-common
+- git clone https://github.com/LineageOS/android_device_xiaomi_sm8150-common -b lineage-18.1 device/xiaomi/sm8150-common
 - git clone https://github.com/bm0x/nabu-qcom-caf_display -b twrp hardware/qcom-caf/sm8150/display
   
 # FOR COMPILING:

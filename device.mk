@@ -289,7 +289,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
-    hardware/qcom/bootctrl
+    hardware/qcom-caf/bootctrl
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/sm8150/display
