@@ -288,7 +288,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
     hardware/qcom/bootctrl
 
 PRODUCT_SOONG_NAMESPACES += \
