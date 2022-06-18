@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     bootctrl.msmnile.recovery
 
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl:64 \
+    android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-service \
     bootctrl.msmnile
 
