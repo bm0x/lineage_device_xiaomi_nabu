@@ -299,4 +299,4 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/sm8150-common/sm8150-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/nabu/nabu-vendor.mk)
