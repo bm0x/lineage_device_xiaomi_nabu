@@ -5,7 +5,7 @@
 #
 
 # Inherit from sm8150-common
-include device/xiaomi/sm8150-common/BoardConfigCommon.mk
+# include device/xiaomi/sm8150-common/BoardConfigCommon.mk
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
@@ -25,6 +25,7 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor \
     vendor_boot
+
 BOARD_USES_RECOVERY_AS_BOOT := true
 ENABLE_VIRTUAL_AB := true
 
@@ -34,14 +35,14 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := kryo
-TARGET_CPU_VARIANT_RUNTIME := kryo485 
+TARGET_CPU_VARIANT_RUNTIME := kryo300 
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := kryo
-TARGET_2ND_CPU_VARIANT_RUNTIME := kryo485
+TARGET_2ND_CPU_VARIANT_RUNTIME := kryo300
 
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x546C00000000
@@ -88,7 +89,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := nabu_defconfig
+TARGET_KERNEL_CONFIG := nabu_debug_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/nabu
 TARGET_KERNEL_CLANG_COMPILE := true
 
